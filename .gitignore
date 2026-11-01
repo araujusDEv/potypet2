@@ -1,0 +1,31 @@
+node_modules/
+.env
+*.cookies
+data/adotapet.db
+data/adotapet.db-wal
+data/adotapet.db-shm
+npm-debug.log*
+
+# Private runtime data, independent of DATA_DIR
+qa-data/
+qa/results/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+uploads/
+private-uploads/
+.env.*
+!.env.production.example
+email-preview/
+backups/
+derived-media/
+*.enc
+
+# Todo dado gerado fica fora do Git, preservando apenas as amostras de código.
+/data/*
+!/data/seed.json
+*.log
+.DS_Store
+Thumbs.db

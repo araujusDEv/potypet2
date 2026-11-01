@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qual pet combina com você? · PotyPet</title>
+<link rel="icon" href="img/brand-symbol.png">
+<link rel="stylesheet" href="css/style.css?v=20261013-potypet-rc1">
+<link rel="stylesheet" href="css/visual.css?v=20261013-potypet-rc1">
+<link rel="stylesheet" href="css/portal.css?v=20261013-potypet-rc1">
+<link rel="stylesheet" href="css/campaign-workspace.css?v=20261013-potypet-rc1"><meta name="description" content="Qual pet combina com você? · PotyPet — adoção responsável e apoio à comunidade.">
+<meta property="og:site_name" content="PotyPet">
+<meta property="og:title" content="Qual pet combina com você? · PotyPet">
+<meta property="og:description" content="Qual pet combina com você? · PotyPet — adoção responsável e apoio à comunidade.">
+<meta name="twitter:title" content="Qual pet combina com você? · PotyPet">
+<meta name="twitter:description" content="Qual pet combina com você? · PotyPet — adoção responsável e apoio à comunidade.">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo" aria-label="PotyPet — início"><span class="logo-mark"><img src="img/brand-symbol.png" alt="" width="56" height="56"></span><span class="brand-word"><span class="brand-adota">Poty</span><span class="brand-pet">Pet</span></span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Início</a>
+        <a href="adotar.html">Quero Adotar</a>
+        <a href="compatibilidade.html">Compatibilidade</a>
+        <a href="historias.html">Histórias</a>
+        <a href="desaparecidos.html">Desaparecidos</a>
+        <a href="conscientizacao.html">Conscientização</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <span id="nav-extra-links"></span>
+      </nav>
+      <div class="nav-actions" id="nav-actions"></div>
+    </div>
+  </header>
+<main id="main">
+<div class="container section">
+  <span class="eyebrow">Compatibilidade</span>
+  <h1 style="margin-bottom:10px;">Qual pet combina com você?</h1>
+  <p style="max-width:620px;margin-bottom:26px;">Responda algumas perguntas sobre sua rotina e sua casa. Vamos calcular, entre os animais disponíveis, quais têm mais chance de se adaptar bem à sua vida.</p>
+
+  <div id="quiz-area">
+    <form class="form-card" id="quiz-form" style="max-width:720px;">
+      <div class="form-field">
+        <label for="q-housing">Tipo de moradia</label>
+        <select id="q-housing">
+          <option value="casa">Casa</option>
+          <option value="apartamento">Apartamento</option>
+          <option value="sitio">Sítio / zona rural</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="q-yard">Possui espaço externo (quintal, área livre)?</label>
+        <select id="q-yard"><option value="sim">Sim</option><option value="nao">Não</option></select>
+      </div>
+      <div class="form-field">
+        <label for="q-kids">Possui crianças em casa?</label>
+        <select id="q-kids"><option value="nao">Não</option><option value="sim">Sim</option></select>
+      </div>
+      <div class="form-field">
+        <label for="q-other-pets">Possui outros animais?</label>
+        <select id="q-other-pets">
+          <option value="nao">Não</option>
+          <option value="cachorro">Sim, cachorro(s)</option>
+          <option value="gato">Sim, gato(s)</option>
+          <option value="outros">Sim, outros</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="q-alone">Quanto tempo o animal ficará sozinho, em média?</label>
+        <select id="q-alone">
+          <option value="menos_2h">Menos de 2 horas</option>
+          <option value="2_4h">2 a 4 horas</option>
+          <option value="4_8h">4 a 8 horas</option>
+          <option value="mais_8h">Mais de 8 horas</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="q-experience">Experiência com animais</label>
+        <select id="q-experience">
+          <option value="nenhuma">Nenhuma</option>
+          <option value="pouca">Pouca</option>
+          <option value="moderada">Moderada</option>
+          <option value="muita">Muita</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="q-species">Preferência de espécie</label>
+        <select id="q-species"><option value="qualquer">Qualquer</option><option value="cachorro">Cachorro</option><option value="gato">Gato</option></select>
+      </div>
+      <div class="form-field">
+        <label for="q-age">Preferência de idade</label>
+        <select id="q-age"><option value="qualquer">Qualquer</option><option value="filhote">Filhote</option><option value="adulto">Adulto</option><option value="idoso">Idoso</option></select>
+      </div>
+      <div class="form-field">
+        <label for="q-size">Preferência de porte</label>
+        <select id="q-size"><option value="qualquer">Qualquer</option><option value="pequeno">Pequeno</option><option value="medio">Médio</option><option value="grande">Grande</option></select>
+      </div>
+      <div class="form-field">
+        <label for="q-energy">Nível de energia desejado</label>
+        <select id="q-energy"><option value="baixo">Baixo</option><option value="medio" selected>Médio</option><option value="alto">Alto</option></select>
+      </div>
+      <div class="form-field">
+        <label for="q-availability">Disponibilidade para cuidados diários</label>
+        <select id="q-availability"><option value="baixa">Baixa</option><option value="media" selected>Média</option><option value="alta">Alta</option></select>
+      </div>
+      <button class="btn btn-primary" type="submit" style="width:100%;">Ver animais compatíveis</button>
+    </form>
+  </div>
+
+  <div id="results-area" style="display:none;">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:20px;">
+      <h2 style="font-size:1.4rem;margin:0;">Afinidade e pontos de atenção</h2><p class="request-policy">O percentual compara preferências e informações declaradas. Não é probabilidade de sucesso, garantia de segurança ou avaliação veterinária/comportamental. Conflitos com crianças ou outros animais vêm antes da pontuação; informações desconhecidas exigem confirmação com o responsável.</p>
+      <button class="btn btn-outline btn-sm" id="btn-redo-quiz">Refazer questionário</button>
+    </div>
+    <div id="match-results" class="grid-animals"></div>
+  </div>
+</div>
+</main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><a href="index.html" class="logo" aria-label="PotyPet — início"><span class="logo-mark"><img src="img/brand-symbol.png" alt="" width="56" height="56"></span><span class="brand-word"><span class="brand-adota">Poty</span><span class="brand-pet">Pet</span></span></a></div>
+          <p style="color:#EAF3EF;opacity:.85;font-size:.9rem;">Plataforma de adoção de animais desenvolvida por estudantes da Escola Estadual Professor Antônio Dantas, em Apodi/RN.</p>
+        </div>
+        <div>
+          <h4>Plataforma</h4>
+          <p><a href="adotar.html">Quero Adotar</a></p>
+          <p><a href="desaparecidos.html">Animais Desaparecidos</a></p>
+          <p><a href="conscientizacao.html">Conscientização</a></p>
+          <p><a href="sobre.html">Sobre</a></p>
+        </div>
+        <div>
+          <h4>Comunidade</h4>
+          <p><a href="cadastrar-animal.html">Cadastrar animal</a></p>
+          <p><a href="login.html">Entrar</a></p>
+          <p><a href="contato.html">Fale conosco</a><br><a href="termos.html">Termos de uso</a><br><a href="privacidade.html">Privacidade</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 PotyPet. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+<script src="js/store.js?v=20261013-potypet-rc4"></script>
+<script src="js/auth.js?v=20261013-potypet-rc1"></script>
+<script src="js/app-runtime.js?v=20261013-potypet-rc5"></script>
+<script src="js/icons.js?v=20261013-potypet-rc1"></script>
+<script src="js/nav.js?v=20261013-potypet-rc4"></script>
+<script src="js/cards.js?v=20261013-potypet-rc5"></script>
+<script src="js/pages/compatibilidade.js?v=20261013-potypet-rc1"></script>
+</body>
+</html>

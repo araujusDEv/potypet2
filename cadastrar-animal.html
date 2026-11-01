@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastrar animal · PotyPet</title>
+<link rel="icon" href="img/brand-symbol.png">
+<link rel="stylesheet" href="css/style.css?v=20261013-potypet-rc1">
+<link rel="stylesheet" href="css/visual.css?v=20261013-potypet-rc1">
+<link rel="stylesheet" href="css/portal.css?v=20261013-potypet-rc1">
+<link rel="stylesheet" href="css/campaign-workspace.css?v=20261013-potypet-rc1"><meta name="description" content="Cadastrar animal · PotyPet — adoção responsável e apoio à comunidade.">
+<meta property="og:site_name" content="PotyPet">
+<meta property="og:title" content="Cadastrar animal · PotyPet">
+<meta property="og:description" content="Cadastrar animal · PotyPet — adoção responsável e apoio à comunidade.">
+<meta name="twitter:title" content="Cadastrar animal · PotyPet">
+<meta name="twitter:description" content="Cadastrar animal · PotyPet — adoção responsável e apoio à comunidade.">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo" aria-label="PotyPet — início"><span class="logo-mark"><img src="img/brand-symbol.png" alt="" width="56" height="56"></span><span class="brand-word"><span class="brand-adota">Poty</span><span class="brand-pet">Pet</span></span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Início</a>
+        <a href="adotar.html">Quero Adotar</a>
+        <a href="compatibilidade.html">Compatibilidade</a>
+        <a href="historias.html">Histórias</a>
+        <a href="desaparecidos.html">Desaparecidos</a>
+        <a href="conscientizacao.html">Conscientização</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <span id="nav-extra-links"></span>
+      </nav>
+      <div class="nav-actions" id="nav-actions"></div>
+    </div>
+  </header>
+<main id="main">
+<div class="container section" style="max-width:720px;">
+  <div class="form-card" style="max-width:720px;" id="form-wrapper">
+    <span class="eyebrow">Cadastro de animal</span>
+    <h1 style="font-size:1.7rem;">Divulgue um animal para adoção</h1>
+    <p class="auth-notice">O anúncio aprovado pode ficar público, incluindo fotos, textos, bairro, nome do responsável e o contato informado (também no cartaz). Não inclua documentos, endereço residencial ou dados privados de terceiros. <a href="privacidade.html">Leia a política de privacidade</a>.</p><div id="alert-area"></div>
+    <form id="animal-form">
+      <div class="form-row">
+        <div class="form-field"><label for="a-name">Nome do animal</label><input required id="a-name"></div>
+        <div class="form-field">
+          <label for="a-species">Espécie</label>
+          <select id="a-species"><option value="cachorro">Cachorro</option><option value="gato">Gato</option></select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label for="a-breed">Raça</label><input id="a-breed" placeholder="SRD, Labrador..."></div>
+        <div class="form-field">
+          <label for="a-sex">Sexo</label>
+          <select id="a-sex"><option value="macho">Macho</option><option value="femea">Fêmea</option></select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="a-size">Porte</label>
+          <select id="a-size"><option value="pequeno">Pequeno</option><option value="medio" selected>Médio</option><option value="grande">Grande</option></select>
+        </div>
+        <div class="form-field">
+          <label for="a-age">Faixa etária</label>
+          <select id="a-age"><option value="filhote">Filhote</option><option value="adulto" selected>Adulto</option><option value="idoso">Idoso</option></select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label for="a-city">Cidade</label>
+<select id="a-city" required>
+<option>Apodi</option><option>Mossoró</option><option>Felipe Guerra</option>
+<option>Caraúbas</option><option>Governador Dix-Sept Rosado</option>
+<option>Umarizal</option><option>Itaú</option><option>Severiano Melo</option>
+<option>Rodolfo Fernandes</option><option>Pau dos Ferros</option>
+<option>Outra</option></select>
+<input id="a-city-other" placeholder="Digite a cidade" style="display:none;margin-top:8px;">
+</div>
+        <div class="form-field"><label for="a-state">Estado</label><input required id="a-state" value="RN"></div>
+      </div>
+      <div class="form-field"><label for="a-neighborhood">Bairro / região (opcional)</label><input id="a-neighborhood" placeholder="Ex.: Centro, Bela Vista..." aria-describedby="a-location-public"><small id="a-location-public">Cidade e bairro ficam públicos no anúncio aprovado. Evite endereço residencial e dados pessoais nos demais campos.</small></div>
+      <p class="request-policy" id="animal-approval-policy"></p>
+      <div class="form-field"><label for="a-description">Descrição curta</label><textarea rows="2" maxlength="2000" id="a-description" aria-describedby="a-description-public"></textarea><small id="a-description-public">Pública após aprovação. Descreva o animal sem documentos, endereço residencial ou dados pessoais de terceiros.</small></div>
+      <div class="form-field"><label for="a-history">História do animal</label><textarea rows="3" maxlength="3000" id="a-history" aria-describedby="a-history-public"></textarea><small id="a-history-public">História, saúde e convivência aparecem no perfil público aprovado. Evite dados pessoais e documentos.</small></div>
+      <div class="form-field"><label for="a-special">Necessidades especiais (opcional)</label><input id="a-special" placeholder="Deixe em branco se não houver"></div>
+      <div class="form-field"><label for="a-health-notes">Observações de saúde (opcional)</label><textarea rows="2" id="a-health-notes"></textarea></div>
+      <div class="checkbox-row"><input type="checkbox" id="a-neutered"><label for="a-neutered">Castrado</label></div>
+      <div class="checkbox-row"><input type="checkbox" id="a-vaccinated"><label for="a-vaccinated">Vacinado</label></div>
+      <div class="checkbox-row" style="margin-bottom:16px;"><input type="checkbox" id="a-dewormed"><label for="a-dewormed">Vermifugado</label></div>
+
+      <h3 style="font-size:1.05rem;">Personalidade</h3>
+      <p style="font-size:.85rem;margin-top:-8px;">Ajuste de 1 (baixo) a 5 (alto). Se não souber, deixe no meio (3).</p>
+      <div class="form-row">
+        <div class="form-field"><label>Energia</label><div class="range-field"><input type="range" min="1" max="5" value="3" id="a-p-energy" aria-label="Energia"><span id="a-p-energy-v">3</span></div></div>
+        <div class="form-field"><label>Sociabilidade</label><div class="range-field"><input type="range" min="1" max="5" value="3" id="a-p-sociability" aria-label="Sociabilidade"><span id="a-p-sociability-v">3</span></div></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label>Carinho</label><div class="range-field"><input type="range" min="1" max="5" value="3" id="a-p-affection" aria-label="Afeto"><span id="a-p-affection-v">3</span></div></div>
+        <div class="form-field"><label>Independência</label><div class="range-field"><input type="range" min="1" max="5" value="3" id="a-p-independence" aria-label="Independência"><span id="a-p-independence-v">3</span></div></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label>Brincalhão</label><div class="range-field"><input type="range" min="1" max="5" value="3" id="a-p-playful" aria-label="Brincadeiras"><span id="a-p-playful-v">3</span></div></div>
+        <div class="form-field"><label>Tranquilidade</label><div class="range-field"><input type="range" min="1" max="5" value="3" id="a-p-calm" aria-label="Tranquilidade"><span id="a-p-calm-v">3</span></div></div>
+      </div>
+      <div class="form-field">
+        <label for="a-energy-level">Nível de energia (resumo, usado nos filtros)</label>
+        <select id="a-energy-level"><option value="baixo">Baixo</option><option value="medio" selected>Médio</option><option value="alto">Alto</option></select>
+      </div>
+
+      <h3 style="font-size:1.05rem;">Convivência</h3>
+      <div class="form-row">
+        <div class="form-field"><label for="a-co-kids">Crianças</label><select id="a-co-kids"><option value="nao_informado">Não informado</option><option value="sim">Sim</option><option value="nao">Não</option></select></div>
+        <div class="form-field"><label for="a-co-dogs">Cães</label><select id="a-co-dogs"><option value="nao_informado">Não informado</option><option value="sim">Sim</option><option value="nao">Não</option></select></div>
+      </div>
+      <div class="form-field"><label for="a-co-cats">Gatos</label><select id="a-co-cats"><option value="nao_informado">Não informado</option><option value="sim">Sim</option><option value="nao">Não</option></select></div>
+
+      <div class="form-field" style="margin-top:8px;"><label for="a-contact">Contato (WhatsApp, telefone ou e-mail)</label><input required maxlength="120" id="a-contact" aria-describedby="a-contact-public"><small id="a-contact-public">Este contato será público após aprovação e poderá aparecer em cartazes. Use somente um contato que autoriza divulgar.</small></div>
+      <div class="form-field"><label for="a-photos">Fotos (até 3, JPG/PNG/WebP)</label><input type="file" accept="image/jpeg,image/png,image/webp" multiple id="a-photos" aria-describedby="a-photo-help"><small id="a-photo-help">Originais de até 20 MB e 20 milhões de pixels. Antes do envio: até 1280 px e 3 MB por foto, com orientação corrigida e sem metadados de localização. Fotos aprovadas ficam públicas; evite rostos, documentos e endereços visíveis. Sem nova seleção, a edição mantém as fotos atuais.</small><p id="a-photo-status" role="status" aria-live="polite"></p></div>
+      <button class="btn btn-primary" type="submit" style="width:100%;">Enviar para aprovação</button>
+    </form>
+  </div>
+</div>
+</main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><a href="index.html" class="logo" aria-label="PotyPet — início"><span class="logo-mark"><img src="img/brand-symbol.png" alt="" width="56" height="56"></span><span class="brand-word"><span class="brand-adota">Poty</span><span class="brand-pet">Pet</span></span></a></div>
+          <p style="color:#EAF3EF;opacity:.85;font-size:.9rem;">Plataforma de adoção de animais desenvolvida por estudantes da Escola Estadual Professor Antônio Dantas, em Apodi/RN.</p>
+        </div>
+        <div>
+          <h4>Plataforma</h4>
+          <p><a href="adotar.html">Quero Adotar</a>
+        <a href="compatibilidade.html">Compatibilidade</a>
+        <a href="historias.html">Histórias</a></p>
+          <p><a href="desaparecidos.html">Animais Desaparecidos</a></p>
+          <p><a href="conscientizacao.html">Conscientização</a></p>
+          <p><a href="sobre.html">Sobre</a></p>
+        </div>
+        <div>
+          <h4>Comunidade</h4>
+          <p><a href="cadastrar-animal.html">Cadastrar animal</a></p>
+          <p><a href="login.html">Entrar</a></p>
+          <p><a href="contato.html">Fale conosco</a><br><a href="termos.html">Termos de uso</a><br><a href="privacidade.html">Privacidade</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 PotyPet. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+<script src="js/store.js?v=20261013-potypet-rc4"></script>
+<script src="js/auth.js?v=20261013-potypet-rc1"></script>
+<script src="js/app-runtime.js?v=20261013-potypet-rc5"></script>
+<script src="js/icons.js?v=20261013-potypet-rc1"></script>
+<script src="js/nav.js?v=20261013-potypet-rc4"></script>
+<script src="js/photo-upload.js?v=20261013-potypet-rc5"></script>
+<script src="js/pages/cadastrar-animal.js?v=20261013-potypet-rc5"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "name": "potypet",
+  "version": "4.7.0",
+  "private": true,
+  "description": "Plataforma PotyPet com adoção acompanhada, Node.js e SQLite",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/pix.cjs && node tests/workflow.cjs && node tests/security.cjs && node tests/security-regressions.cjs && node tests/hardening.cjs && node tests/migration.cjs && node tests/brand.cjs && node tests/admin-recovery.cjs && node tests/qa-regressions.cjs && node tests/email-auth.cjs && node tests/backups.cjs && node tests/etapa1.cjs && node tests/etapa2.cjs && node tests/etapa3.cjs && node tests/etapa4.cjs && node tests/etapa5.cjs && node tests/etapa6.cjs && node tests/brand-history.cjs && node tests/concurrency.cjs && node tests/admin-actions.cjs && node tests/account-restrictions.cjs && node tests/account-history-ui.cjs && node tests/photo-approval.cjs && node tests/photo-concurrency.cjs && node tests/review-operations.cjs",
+    "test:qa": "node tests/qa-regressions.cjs",
+    "test:hardening": "node tests/hardening.cjs",
+    "backup": "node scripts/backup.cjs",
+    "test:email": "node tests/email-auth.cjs",
+    "check:email": "node scripts/check-email.cjs",
+    "test:backup": "node tests/backups.cjs",
+    "backup:decrypt": "node scripts/decrypt-backup.cjs",
+    "test:etapa1": "node tests/etapa1.cjs",
+    "test:etapa2": "node tests/etapa2.cjs",
+    "test:etapa3": "node tests/etapa3.cjs",
+    "test:etapa4": "node tests/etapa4.cjs",
+    "test:etapa5": "node tests/etapa5.cjs",
+    "test:etapa6": "node tests/etapa6.cjs",
+    "restore:check": "node scripts/restore-check.cjs",
+    "check:package": "node scripts/check-package.cjs",
+    "test:brand": "node tests/brand.cjs && node tests/brand-history.cjs",
+    "test:concurrency": "node tests/concurrency.cjs",
+    "test:admin": "node tests/admin-actions.cjs",
+    "test:restriction": "node tests/account-restrictions.cjs && node tests/account-history-ui.cjs",
+    "test:photos": "node tests/photo-approval.cjs && node tests/photo-concurrency.cjs",
+    "test:review": "node tests/review-operations.cjs"
+  },
+  "engines": {
+    "node": ">=24.21.0 <25"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.1149.0",
+    "nodemailer": "10.2.1",
+    "pdf-lib": "1.17.1",
+    "pngjs": "7.0.0",
+    "sharp": "0.35.5"
+  }
+}

@@ -1,0 +1,10 @@
+POTYPET — PACOTE GITHUB / RENDER FREE
+
+Leia README.md antes de publicar.
+
+Extraia o ZIP e envie os arquivos extraídos à raiz do repositório.
+No Render, use Blueprint para aplicar render.yaml ou configure Web Service conforme o README.
+
+Este pacote usa demonstração temporária no plano Free. Cadastros e fotos podem ser perdidos após suspensão, reinício ou atualização. Use somente dados fictícios. Não há envio real de e-mail.
+
+Nenhum serviço foi publicado por esta preparação.

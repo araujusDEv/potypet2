@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quero Adotar · PotyPet</title>
+<link rel="icon" href="img/brand-symbol.png">
+<link rel="stylesheet" href="css/style.css?v=20261013-potypet-rc1">
+<link rel="stylesheet" href="css/visual.css?v=20261013-potypet-rc1">
+<link rel="stylesheet" href="css/portal.css?v=20261013-potypet-rc1">
+<link rel="stylesheet" href="css/campaign-workspace.css?v=20261013-potypet-rc1"><meta name="description" content="Quero Adotar · PotyPet — adoção responsável e apoio à comunidade.">
+<meta property="og:site_name" content="PotyPet">
+<meta property="og:title" content="Quero Adotar · PotyPet">
+<meta property="og:description" content="Quero Adotar · PotyPet — adoção responsável e apoio à comunidade.">
+<meta name="twitter:title" content="Quero Adotar · PotyPet">
+<meta name="twitter:description" content="Quero Adotar · PotyPet — adoção responsável e apoio à comunidade.">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo" aria-label="PotyPet — início"><span class="logo-mark"><img src="img/brand-symbol.png" alt="" width="56" height="56"></span><span class="brand-word"><span class="brand-adota">Poty</span><span class="brand-pet">Pet</span></span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Início</a>
+        <a href="adotar.html">Quero Adotar</a>
+        <a href="compatibilidade.html">Compatibilidade</a>
+        <a href="historias.html">Histórias</a>
+        <a href="desaparecidos.html">Desaparecidos</a>
+        <a href="conscientizacao.html">Conscientização</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <span id="nav-extra-links"></span>
+      </nav>
+      <div class="nav-actions" id="nav-actions"></div>
+    </div>
+  </header>
+<main id="main">
+<div class="container section">
+  <span class="eyebrow">Quero adotar</span>
+  <h1 style="margin-bottom:26px;">Encontre seu novo melhor amigo</h1>
+
+  <div class="filters-bar">
+    <input id="f-q" placeholder="Buscar por nome, raça...">
+    <select id="f-city" aria-label="Filtrar por cidade">
+<option value="">Cidade</option>
+<option>Apodi</option><option>Mossoró</option><option>Felipe Guerra</option>
+<option>Caraúbas</option><option>Governador Dix-Sept Rosado</option>
+<option>Umarizal</option><option>Itaú</option><option>Severiano Melo</option>
+<option>Rodolfo Fernandes</option><option>Pau dos Ferros</option>
+</select>
+    <select id="f-age" aria-label="Filtrar por idade">
+      <option value="">Idade</option>
+      <option value="filhote">Filhote</option>
+      <option value="adulto">Adulto</option>
+      <option value="idoso">Idoso</option>
+    </select>
+    <select id="f-size" aria-label="Filtrar por porte">
+      <option value="">Porte</option>
+      <option value="pequeno">Porte pequeno</option>
+      <option value="medio">Porte médio</option>
+      <option value="grande">Porte grande</option>
+    </select>
+    <select id="f-sex" aria-label="Filtrar por sexo">
+      <option value="">Sexo</option>
+      <option value="macho">Macho</option>
+      <option value="femea">Fêmea</option>
+    </select>
+    <select id="f-kids" aria-label="Convivência com crianças">
+      <option value="">Convive com crianças</option>
+      <option value="sim">Convive com crianças</option>
+    </select>
+    <select id="f-energy" aria-label="Nível de energia">
+      <option value="">Nível de energia</option>
+      <option value="baixo">Energia baixa</option>
+      <option value="medio">Energia média</option>
+      <option value="alto">Energia alta</option>
+    </select>
+  </div>
+
+  <div class="chips">
+    <button class="chip" data-filter="species" data-value="cachorro">Cachorro</button>
+    <button class="chip" data-filter="species" data-value="gato">Gato</button>
+    <button class="chip" data-filter="neutered" data-value="true">Castrado</button>
+    <button class="chip" data-filter="vaccinated" data-value="true">Vacinado</button>
+    <button class="chip" data-filter="dewormed" data-value="true">Vermifugado</button>
+    <button class="chip" data-filter="special_needs" data-value="true">Necessidades especiais</button>
+    <button class="chip" data-filter="urgent" data-value="true">Casos urgentes</button>
+  </div>
+
+  <div class="filters-bar-actions">
+    <span class="results-count" id="results-count"></span>
+    <button class="btn btn-outline btn-sm" id="btn-clear-filters">Limpar filtros</button>
+  </div>
+
+  <div class="grid-animals" id="results"></div>
+</div>
+</main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><a href="index.html" class="logo" aria-label="PotyPet — início"><span class="logo-mark"><img src="img/brand-symbol.png" alt="" width="56" height="56"></span><span class="brand-word"><span class="brand-adota">Poty</span><span class="brand-pet">Pet</span></span></a></div>
+          <p style="color:#EAF3EF;opacity:.85;font-size:.9rem;">Plataforma de adoção de animais desenvolvida por estudantes da Escola Estadual Professor Antônio Dantas, em Apodi/RN.</p>
+        </div>
+        <div>
+          <h4>Plataforma</h4>
+          <p><a href="adotar.html">Quero Adotar</a>
+        <a href="compatibilidade.html">Compatibilidade</a>
+        <a href="historias.html">Histórias</a></p>
+          <p><a href="desaparecidos.html">Animais Desaparecidos</a></p>
+          <p><a href="conscientizacao.html">Conscientização</a></p>
+          <p><a href="sobre.html">Sobre</a></p>
+        </div>
+        <div>
+          <h4>Comunidade</h4>
+          <p><a href="cadastrar-animal.html">Cadastrar animal</a></p>
+          <p><a href="login.html">Entrar</a></p>
+          <p><a href="contato.html">Fale conosco</a><br><a href="termos.html">Termos de uso</a><br><a href="privacidade.html">Privacidade</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 PotyPet. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+<script src="js/store.js?v=20261013-potypet-rc4"></script>
+<script src="js/auth.js?v=20261013-potypet-rc1"></script>
+<script src="js/app-runtime.js?v=20261013-potypet-rc5"></script>
+<script src="js/icons.js?v=20261013-potypet-rc1"></script>
+<script src="js/nav.js?v=20261013-potypet-rc4"></script>
+<script src="js/cards.js?v=20261013-potypet-rc5"></script>
+<script src="js/pages/adotar.js?v=20261013-potypet-rc1"></script>
+</body>
+</html>

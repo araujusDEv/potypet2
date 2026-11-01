@@ -1,0 +1,43 @@
+# PotyPet 4.7.0 — demonstração no Render Free.
+# Dados temporários: não use com cadastros, animais ou pagamentos reais.
+services:
+  - type: web
+    name: potypet-demo
+    runtime: node
+    plan: free
+    numInstances: 1
+    autoDeployTrigger: "off"
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.21.0
+      - key: NODE_ENV
+        value: development
+      - key: HOST
+        value: 0.0.0.0
+      - key: DATA_DIR
+        value: /tmp/potypet-demo
+      - key: EMAIL_TRANSPORT
+        value: disabled
+      - key: SEED_DEMO_ACCOUNTS
+        value: "0"
+      - key: SEED_SAMPLE_DATA
+        value: "0"
+      - key: BACKUP_AUTO
+        value: "0"
+      - key: COOKIE_SECURE
+        value: "1"
+      - key: TRUST_PROXY
+        value: "0"
+      - key: DONOR_NAME
+        value: Perfil de demonstração
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: DONOR_EMAIL
+        sync: false
+      - key: DONOR_PASSWORD
+        sync: false

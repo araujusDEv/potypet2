@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ajude animais a receber tratamento, alimentação e acolhimento. Conheça as campanhas de arrecadação do PotyPet.">
+  <title>Doe por um pet · PotyPet</title>
+  <link rel="icon" href="img/brand-symbol.png">
+  <link rel="stylesheet" href="css/style.css?v=20261013-potypet-rc1">
+  <link rel="stylesheet" href="css/visual.css?v=20261013-potypet-rc1">
+  <link rel="stylesheet" href="css/portal.css?v=20261013-potypet-rc1">
+  <link rel="stylesheet" href="css/doacoes.css?v=20261021-potypet-imagens1">
+<link rel="stylesheet" href="css/campaign-workspace.css?v=20261013-potypet-rc1"><meta property="og:site_name" content="PotyPet">
+<meta property="og:title" content="Doe por um pet · PotyPet">
+<meta property="og:description" content="Ajude animais a receber tratamento, alimentação e acolhimento. Conheça as campanhas de arrecadação do PotyPet.">
+<meta name="twitter:title" content="Doe por um pet · PotyPet">
+<meta name="twitter:description" content="Ajude animais a receber tratamento, alimentação e acolhimento. Conheça as campanhas de arrecadação do PotyPet.">
+</head>
+<body>
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<header class="navbar"></header>
+<main id="main" class="fundraising-page">
+  <div class="container">
+    <section class="fund-intro" aria-labelledby="fund-title"><div><span class="eyebrow">Doe por um pet</span><h1 id="fund-title">Pequenos gestos.<br><em>Cuidado que continua.</em></h1><p>Apoie tratamentos, alimentação e acolhimento. Conheça a necessidade e quem receberá sua ajuda.</p></div><div class="fund-intro-aside"><span data-icon="heart"></span><p>Precisa de apoio para um animal ou para sua organização?</p><a class="btn btn-outline" href="solicitar-campanha.html">Solicitar campanha</a><small>A publicação depende de análise.</small></div></section>
+    <div class="fund-totals" aria-label="Resumo das campanhas">
+      <div><span data-icon="heart"></span><p><strong id="fund-active">—</strong><span>campanhas abertas</span></p></div>
+      <div><span data-icon="paw"></span><p><strong id="fund-raised">—</strong><span>arrecadados · total informado</span></p></div>
+      <div><span data-icon="users"></span><p><strong>De pessoa para pet</strong><span>você escolhe quem ajudar</span></p></div>
+    </div>
+    <section id="campanhas" class="fund-section" aria-labelledby="campaigns-heading">
+      <div class="fund-section-head"><div><span class="eyebrow">Ajude uma história a continuar</span><h2 id="campaigns-heading">Campanhas para apoiar</h2></div><a href="campanhas.html" class="btn btn-outline">Minhas campanhas</a></div>
+      <div class="fund-filters"><label><span class="sr-only">Tipo de apoio</span><select id="campaign-kind"><option value="campaign">Campanhas com meta</option><option value="ongoing">Apoio contínuo</option><option value="">Todos os apoios</option></select></label>
+        <label class="fund-search"><span data-icon="search"></span><span class="sr-only">Buscar campanha ou pet</span><input id="campaign-search" type="search" placeholder="Busque por pet, campanha ou cidade"></label>
+        <label><span class="sr-only">Finalidade</span><select id="campaign-category"><option value="">Todas as causas</option><option value="cirurgia">Cirurgias</option><option value="tratamento">Tratamentos</option><option value="alimentacao">Alimentação</option><option value="acolhimento">Acolhimento</option></select></label>
+        <label><span class="sr-only">Situação</span><select id="campaign-status"><option value="active">Campanhas abertas</option><option value="closed">Encerradas ou pausadas</option><option value="all">Todas</option></select></label>
+      </div>
+      <p id="campaign-count" class="fund-small" role="status"></p>
+      <div id="campaign-results" class="fund-grid" aria-busy="true"><p>Carregando campanhas…</p></div>
+      <div id="campaign-error" role="alert" hidden></div>
+    </section>
+    <section class="fund-how fund-section" id="como-ajudar" aria-labelledby="how-title">
+      <div><span class="eyebrow">Simples, direto e com carinho</span><h2 id="how-title">Como sua ajuda chega</h2><p>Você faz o Pix no aplicativo do seu banco. O PotyPet conecta você à campanha.</p></div>
+      <ol><li><span>01</span><div><h3>Conheça a história</h3><p>Veja o pet, o motivo da arrecadação e quem é responsável.</p></div></li><li><span>02</span><div><h3>Escolha o valor e gere o Pix</h3><p>Use o QR Code ou Pix Copia e Cola. Antes de confirmar no banco, confira o valor e o nome do recebedor.</p></div></li><li><span>03</span><div><h3>Acompanhe as novidades</h3><p>Os totais e as atualizações são publicados pela administração após contato com o responsável.</p></div></li></ol>
+    </section>
+    <aside class="fund-invite"><span data-icon="paw"></span><div><h2>Conhece um pet que precisa de ajuda?</h2><p>Envie uma solicitação e acompanhe a análise pela sua conta.</p></div><a class="btn btn-outline" href="solicitar-campanha.html">Solicitar campanha</a></aside>
+    <p class="fund-disclosure">O PotyPet não recebe nem processa o dinheiro. As doações são feitas diretamente à ONG ou ao responsável. Os valores arrecadados são informados manualmente e não representam confirmação bancária automática.</p>
+  </div>
+</main>
+<dialog id="donation-dialog" class="fund-dialog" aria-labelledby="donation-title"><div id="donation-detail"></div></dialog>
+
+<script src="js/store.js?v=20261013-potypet-rc4"></script><script src="js/auth.js?v=20261013-potypet-rc1"></script>
+<script src="js/app-runtime.js?v=20261013-potypet-rc5"></script><script src="js/icons.js?v=20261013-potypet-rc1"></script><script src="js/nav.js?v=20261013-potypet-rc4"></script><script src="js/vendor/qrcode.min.js?v=20261013-potypet-rc1"></script><script src="js/pages/doacoes.js?v=20261013-potypet-rc1"></script>
+</body>
+</html>
