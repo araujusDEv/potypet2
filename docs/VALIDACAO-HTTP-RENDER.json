@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "runtime": "24.21.0",
+  "checks": [
+    "health SQLite",
+    "página /",
+    "página /login.html",
+    "página /registro.html",
+    "página /adotar.html",
+    "página /campanhas.html",
+    "página /minhas-solicitacoes.html",
+    "arquivo privado bloqueado /server.js",
+    "arquivo privado bloqueado /package.json",
+    "arquivo privado bloqueado /data/seed.json",
+    "arquivo privado bloqueado /.env",
+    "arquivo privado bloqueado /render.yaml",
+    "login administrativo",
+    "cookie com Secure e HttpOnly",
+    "modo demonstração, e-mail desativado",
+    "dados de exemplo não importados",
+    "admin protegido de visitante",
+    "cadastro de conta fictícia sem SMTP",
+    "login da conta cadastrada"
+  ],
+  "scope": "HTTP/API local com variáveis do render.yaml, dados fictícios e credenciais efêmeras. Não é deploy nem teste de navegador/HTTPS do provedor."
+}

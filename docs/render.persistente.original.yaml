@@ -1,0 +1,62 @@
+# Produção com disco persistente. Este arquivo não publica nem contrata serviços.
+services:
+  - type: web
+    name: adotapet
+    runtime: node
+    plan: 1c-2g
+    numInstances: 1
+    autoDeployTrigger: "off"
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    disk:
+      name: appet-data
+      mountPath: /var/data
+      sizeGB: 5
+    envVars:
+      - key: NODE_VERSION
+        value: 24.21.0
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /var/data/appet
+      - key: PERSISTENT_DISK_PATH
+        value: /var/data
+      - key: SEED_DEMO_ACCOUNTS
+        value: "0"
+      - key: SEED_SAMPLE_DATA
+        value: "0"
+      - key: COOKIE_SECURE
+        value: "1"
+      - key: TRUST_PROXY
+        value: "0"
+      - key: EMAIL_TRANSPORT
+        value: smtp
+      - key: MAIL_FROM
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        value: "465"
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: MAIL_QUEUE_KEY
+        sync: false
+      - key: BACKUP_AUTO
+        value: "1"
+      - key: BACKUP_KEEP
+        value: "3"
+      - key: BACKUP_MAX_MB
+        value: "2048"
+      - key: BACKUP_MIN_FREE_MB
+        value: "256"
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: DONOR_EMAIL
+        sync: false
+      - key: DONOR_PASSWORD
+        sync: false
