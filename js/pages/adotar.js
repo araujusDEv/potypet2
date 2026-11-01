@@ -33,7 +33,7 @@ function applyFilters() {
   if (age) animals = animals.filter((a) => a.age_group === age);
   if (size) animals = animals.filter((a) => a.size === size);
   if (sex) animals = animals.filter((a) => a.sex === sex);
-  if (kids) animals = animals.filter((a) => a.coexistence && a.coexistence.kids === 'sim');
+  if (kids) animals = animals.filter((a) => a.coexistence && a.coexistence.kids === kids);
   if (energy) animals = animals.filter((a) => a.energy_level === energy);
   if (activeChips.species) animals = animals.filter((a) => a.species === activeChips.species);
   if (activeChips.neutered) animals = animals.filter((a) => a.neutered);

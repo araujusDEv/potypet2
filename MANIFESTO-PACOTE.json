@@ -1,6 +1,6 @@
 {
   "base": "PotyPet 4.7.0",
-  "date": "2026-10-29",
+  "date": "2026-11-01",
   "target": "GitHub / Render Free - demonstracao temporaria",
   "sha256": {
     ".env.production.example": "f2b0087c06822ed4ace12f13857c6c5e50a487b9297077d0b715b8abf0af085a",
@@ -11,7 +11,7 @@
     "LEIA-ME-PRIMEIRO.txt": "4a4436edc3b1330236c3fb666588eedfa829b414876442cf9446dbcd8ed855d3",
     "README.md": "3200b3bdbe8a6bd1b6a3606b100928386d339cb2f517fc008249980765adea88",
     "admin.html": "9d426cab49c0845e5f50e500c286b63747db3caf8b93bdf2cd05773d50aca5b2",
-    "adotar.html": "3e2656e07a65278242d36f46b39ff15d4c893c9e6673fd2a7d4cf591b30115e3",
+    "adotar.html": "f70e5bf9b5033c1776069bd765aa01b2e6b19ed891f0b4da0f07cc9ca8b28db9",
     "animal.html": "c9d90f400723502ebdda1da2806af73b8384008c1f4b572d6dff9ba84a2a3da5",
     "apoio.html": "f11fd5cdeee38396b824efa37456f18591d993b1dd46ee7f1f736bb98c4b54f3",
     "atendimento.html": "b3dfe9eb3c46317b236f25d699b29850dee3c43c2af26750c2f2202a719b2bd9",
@@ -76,7 +76,7 @@
     "js/icons.js": "f78f6f3fb0f131727fe200f027d1150d1afe81d81950502034d2fea17dd54961",
     "js/nav.js": "8ffd73b7a23fc68359ceeb3b9fd1b0ca53ba74015cbe41789c6a6c152e9f962f",
     "js/pages/admin.js": "28b443212cc0774062dc4f766bfdbc61c81f76a4c1a5be0b50acdc3d458407f6",
-    "js/pages/adotar.js": "bb380b2306ba4cc4d564b2957475edbe81dfcc2b4428b59ce4064e8f0b0c4f6d",
+    "js/pages/adotar.js": "decaaa111f2be03e299015fd3be003b89c3801bd1ceee776965802559feb6150",
     "js/pages/animal-detail.js": "baf748c99f20a1135dc60e9c4b28feffa18139a399462b103003ac28d512d914",
     "js/pages/apoio.js": "9dd7a7886a0c32d96f9cd6f6bf070f02507bf373970b9bf5b0946d28d91905ea",
     "js/pages/cadastrar-animal.js": "b0601c86d9dea8d5140235c4f7de898ad268f995231659a402689211daf67e39",
@@ -181,6 +181,13 @@
     "tests/workflow.cjs": "0d6fa3800ff94b89316999b27b1583a3fb6b19cb42d9b95bac131adaf1094f42",
     "transparencia.html": "4f2615ef8009ec08967fe84976d8b281d08b16e4302484ea527a3e5be20ba763"
   },
-  "sourceZipSha256": "f9b68537f404ec4ee08d45cdc01b7ee6807b1fc9dc6aa7335890a9e2cd18d0cd",
-  "update": "Revisão de segurança e limpeza: proteção de escritas contra CSRF, limite de login por falha, nodemailer 10.2.1, código formatado, comentários de orientação e documentação enxuta em docs/guias."
+  "sourceZipSha256": "12ce3aec081b46ad25acd1132419d30ef9585ff00c410978dd986f2dafc6c2b7",
+  "update": "Ajuste exclusivo do filtro de convivência com crianças: opções qualquer/sim/não, correspondência exata da informação declarada e atualização da referência do script da página.",
+  "history": [
+    {
+      "date": "2026-10-29",
+      "sourceZipSha256": "f9b68537f404ec4ee08d45cdc01b7ee6807b1fc9dc6aa7335890a9e2cd18d0cd",
+      "update": "Revisão de segurança e limpeza: proteção de escritas contra CSRF, limite de login por falha, nodemailer 10.2.1, código formatado, comentários de orientação e documentação enxuta em docs/guias."
+    }
+  ]
 }
