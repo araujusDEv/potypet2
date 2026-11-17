@@ -5,7 +5,9 @@
   "description": "Plataforma PotyPet com adoção acompanhada, Node.js e SQLite",
   "scripts": {
     "start": "node server.js",
-    "test": "node tests/pix.cjs && node tests/workflow.cjs && node tests/security.cjs && node tests/security-regressions.cjs && node tests/hardening.cjs && node tests/migration.cjs && node tests/brand.cjs && node tests/admin-recovery.cjs && node tests/qa-regressions.cjs && node tests/email-auth.cjs && node tests/backups.cjs && node tests/etapa1.cjs && node tests/etapa2.cjs && node tests/etapa3.cjs && node tests/etapa4.cjs && node tests/etapa5.cjs && node tests/etapa6.cjs && node tests/brand-history.cjs && node tests/concurrency.cjs && node tests/admin-actions.cjs && node tests/account-restrictions.cjs && node tests/account-history-ui.cjs && node tests/photo-approval.cjs && node tests/photo-concurrency.cjs && node tests/review-operations.cjs",
+    "cadastro:inicial": "node scripts/cadastro-inicial.cjs",
+    "test:cadastro": "node tests/cadastro-inicial.cjs",
+    "test": "node tests/pix.cjs && node tests/workflow.cjs && node tests/security.cjs && node tests/security-regressions.cjs && node tests/hardening.cjs && node tests/migration.cjs && node tests/brand.cjs && node tests/admin-recovery.cjs && node tests/qa-regressions.cjs && node tests/email-auth.cjs && node tests/backups.cjs && node tests/etapa1.cjs && node tests/etapa2.cjs && node tests/etapa3.cjs && node tests/etapa4.cjs && node tests/etapa5.cjs && node tests/etapa6.cjs && node tests/brand-history.cjs && node tests/concurrency.cjs && node tests/admin-actions.cjs && node tests/account-restrictions.cjs && node tests/account-history-ui.cjs && node tests/photo-approval.cjs && node tests/photo-concurrency.cjs && node tests/review-operations.cjs && node tests/cadastro-inicial.cjs",
     "test:qa": "node tests/qa-regressions.cjs",
     "test:hardening": "node tests/hardening.cjs",
     "backup": "node scripts/backup.cjs",
